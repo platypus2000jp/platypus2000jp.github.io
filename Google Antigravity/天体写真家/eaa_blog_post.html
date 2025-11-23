@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>電子観望（EAA）の世界へようこそ</title>
+<style>
+    /* Blogger互換のためのスタイルリセットとベーススタイル */
+    .eaa-blog-post {
+        font-family: 'Noto Sans JP', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #e0e0e0;
+        background-color: #0b0d17;
+        line-height: 1.8;
+        font-size: 16px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .eaa-blog-post * {
+        box-sizing: border-box;
+    }
+
+    .eaa-blog-post h1, .eaa-blog-post h2, .eaa-blog-post h3 {
+        color: #ffffff;
+        font-weight: 700;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.3;
+    }
+
+    .eaa-blog-post h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1em;
+    }
+
+    .eaa-blog-post h2 {
+        font-size: 2rem;
+        border-bottom: 2px solid #0072ff;
+        padding-bottom: 0.3em;
+        display: inline-block;
+    }
+
+    .eaa-blog-post p {
+        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+    }
+
+    .eaa-blog-post strong {
+        color: #00c6ff;
+    }
+
+    /* ヒーローセクション */
+    .eaa-hero {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: #1a1d2e; /* Placeholder color */
+        background-image: url('https://placehold.co/1200x600/1a1d2e/ffffff?text=Deep+Space+Nebula'); /* Placeholder image */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-bottom: 2em;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .eaa-hero-text {
+        background: rgba(11, 13, 23, 0.8);
+        padding: 2em;
+        border-radius: 8px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .eaa-hero-text h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        background: none;
+        -webkit-text-fill-color: #fff;
+        text-shadow: 0 0 10px rgba(0,198,255,0.5);
+    }
+
+    /* 画像スタイル */
+    .eaa-image-container {
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .eaa-image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        border: 1px solid #2a2d3e;
+    }
+
+    .eaa-caption {
+        display: block;
+        margin-top: 0.5em;
+        font-size: 0.9rem;
+        color: #8b9bb4;
+        font-style: italic;
+    }
+
+    /* リストスタイル */
+    .eaa-blog-post ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em 0;
+    }
+
+    .eaa-blog-post ul li {
+        background: rgba(255,255,255,0.05);
+        margin-bottom: 0.8em;
+        padding: 1em;
+        border-radius: 6px;
+        border-left: 4px solid #0072ff;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .eaa-blog-post ul li::before {
+        content: "★";
+        color: #ffd700;
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    /* ボタン/CTA */
+    .eaa-cta {
+        text-align: center;
+        margin: 3em 0;
+    }
+
+    .eaa-button {
+        display: inline-block;
+        padding: 1em 2em;
+        background: linear-gradient(45deg, #0072ff, #00c6ff);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+    }
+
+    .eaa-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
+        color: white;
+    }
+
+    /* レスポンシブ調整 */
+    @media (max-width: 768px) {
+        .eaa-hero {
+            height: 300px;
+        }
+        .eaa-hero-text h1 {
+            font-size: 1.8rem;
+        }
+        .eaa-blog-post h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="eaa-blog-post">
+
+    <!-- ヒーローセクション -->
+    <div class="eaa-hero">
+        <div class="eaa-hero-text">
+            <h1>見えない宇宙を、その目で。</h1>
+            <p>電子観望（EAA）が拓く新しい天体観測の扉</p>
+        </div>
+    </div>
+
+    <p>
+        夜空を見上げても、街明かりで星が見えないと諦めていませんか？<br>
+        あるいは、望遠鏡を覗いても、図鑑で見るような色鮮やかな星雲が見えなくてがっかりした経験はありませんか？
+    </p>
+    <p>
+        <strong>電子観望（EAA: Electronically Assisted Astronomy）</strong>は、そんな常識を覆します。<br>
+        最新のデジタル技術と天体望遠鏡を組み合わせることで、都会のベランダからでも、数億光年彼方の銀河や、色鮮やかな星雲をリアルタイムで楽しむことができるのです。
+    </p>
+
+    <h2>電子観望（EAA）とは？</h2>
+    <p>
+        電子観望とは、高感度なCMOSカメラを使って天体を撮影し、PCやタブレット上で画像を次々と重ね合わせる（ライブスタック）ことで、ノイズを消し、淡い光を浮かび上がらせる手法です。
+    </p>
+    
+    <div class="eaa-image-container">
+        <img src="https://placehold.co/800x450/1a1d2e/ffffff?text=Live+Stacking+Software+Screen" alt="ライブスタック中の画面">
+        <span class="eaa-caption">数秒ごとに星雲の姿が鮮明になっていく様子は、まさに魔法です。</span>
+    </div>
+
+    <p>
+        従来の「天体写真」は何時間もかけて撮影し、後で画像処理を行うものでしたが、EAAはその場で結果が見える「観望」のスタイルです。<br>
+        望遠鏡を覗く代わりに、スクリーンを通して宇宙を見る。それがEAAです。
+    </p>
+
+    <h2>なぜ今、電子観望なのか？</h2>
+    <ul>
+        <li><strong>光害に強い：</strong> 強力な画像処理により、都会の明るい空でも星雲や銀河を映し出せます。</li>
+        <li><strong>共有できる感動：</strong> 接眼レンズを交代で覗く必要はありません。家族や友人と一緒に大画面で宇宙を共有できます。</li>
+        <li><strong>即時性：</strong> 準備して数分で、深宇宙の神秘的な姿が目の前に現れます。</li>
+        <li><strong>快適さ：</strong> 寒い冬も、蚊の多い夏も、機材を外に置いて自分は室内からリモート観望、なんてことも可能です。</li>
+    </ul>
+
+    <h2>必要な機材</h2>
+    <p>EAAを始めるのに、天文台のような巨大な設備は必要ありません。以下の4つがあれば始められます。</p>
+
+    <div class="eaa-image-container">
+        <img src="https://placehold.co/800x450/1a1d2e/ffffff?text=EAA+Telescope+Setup" alt="電子観望の機材セットアップ">
+        <span class="eaa-caption">コンパクトな機材でも驚くような成果が得られます。</span>
+    </div>
+
+    <ul>
+        <li><strong>望遠鏡/レンズ：</strong> 明るい（F値が小さい）ものが有利ですが、手持ちのカメラレンズでも可能です。</li>
+        <li><strong>CMOSカメラ：</strong> 天体用カメラがベストですが、高感度な一眼レフも使えます。</li>
+        <li><strong>自動導入架台：</strong> 星を追いかけ続けるために必須です。最近は軽量で安価な経緯台も人気です。</li>
+        <li><strong>PC/タブレット：</strong> 制御と画像処理を行います。</li>
+    </ul>
+
+    <h2>さあ、始めよう</h2>
+    <p>
+        宇宙は思ったよりもずっと近くにあります。<br>
+        電子観望という新しい「眼」を手に入れて、自宅から138億年の旅に出かけませんか？
+    </p>
+
+    <div class="eaa-cta">
+        <a href="#" class="eaa-button">おすすめ機材セットを見る</a>
+    </div>
+
+</div>
+
+</body>
+</html>
